@@ -8,9 +8,9 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 # MySQL Configuration
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'KhojiDev'
-app.config['MYSQL_PASSWORD'] = 'Khoji@Dev1'
+app.config['MYSQL_HOST'] = '144.24.96.48'
+app.config['MYSQL_USER'] = 'Khoji'
+app.config['MYSQL_PASSWORD'] = 'Khoji@123'
 app.config['MYSQL_DB'] = 'FerryOne'
 app.secret_key = 'ganesh'
 
@@ -106,4 +106,4 @@ def logout():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
